@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where Taste Meets Quality | Kerala Traditional Food</title>
+    <meta name="description"
+        content="Authentic Flavours, Crafted with Tradition. Premium spices, nostalgic sweets, and homemade delicacies — delivered fresh.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="spinner">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="loading-text">TRUETASTE</div>
+    </div>
+
+    <!-- Grain Texture Overlay -->
+    <div class="grain-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="TRUETASTE Logo">
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#vision">Vision</a>
+                <a href="#product">Product</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="icon-btn" aria-label="Cart"><span
+                        class="material-icons-outlined">shopping_cart</span></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <!-- Floating Spice Particles Animation -->
+        <div class="particles" id="particles"></div>
+        <div class="bg-circle-shape"></div>
+        <div class="hero-container">
+            <!-- Left Text Content -->
+            <div class="hero-text-block">
+                <h1 class="hero-headline"
+                    style="margin-bottom: 25px; line-height: 1.15; font-size: clamp(3.5rem, 6vw, 5.5rem);">
+                    <span class="reveal-line"><span class="reveal-text">Crafted with tradition,</span></span><br>
+                    <span class="reveal-line"><span class="reveal-text">served with love.</span></span>
+                </h1>
+                <p class="hero-subtext"
+                    style="font-size: 1.5rem; font-weight: 300; line-height: 1.7; color: var(--text-light); max-width: 480px; margin-bottom: 0; min-height: auto;">
+                    <span class="reveal-line" style="padding-top: 5px;"><span class="reveal-text">Every product reflects
+                            generations</span></span><br>
+                    <span class="reveal-line"><span class="reveal-text">of authentic taste and purity.</span></span>
+                </p>
+            </div>
+
+            <div class="hero-arc-visual fade-up" style="transition-delay: 150ms;">
+                <!-- Full circle dashed line SVG -->
+                <div class="arc-svg-container">
+                    <svg viewBox="0 0 600 600" class="dashed-circle">
+                        <circle cx="300" cy="300" r="250" fill="none" stroke="rgba(85,107,47,0.4)" stroke-width="2"
+                            stroke-dasharray="10, 15" />
+                    </svg>
+                </div>
+                <div class="orbit-satellites">
+                    <div class="orbit-item" data-index="0" data-title="Daily Essential Pulses"
+                        data-desc="Thinly sliced, crisply fried premium banana chips." data-img="assets/Pulses.png">
+                        <img src="assets/Pulses.png" alt="Pulses">
+                    </div>
+                    <div class="orbit-item" data-index="1" data-title="Premium Spices"
+                        data-desc="Handpicked and traditionally processed authentic Kerala spices."
+                        data-img="assets/spices.png">
+                        <img src="assets/spices.png" alt="Spices">
+                    </div>
+                    <div class="orbit-item" data-index="2" data-title="Traditional Snacks"
+                        data-desc="Crunchy and delicious traditional Kerala snacks for every occasion."
+                        data-img="assets/snacks.png">
+                        <img src="assets/snacks.png" alt="Snacks">
+                    </div>
+                    <div class="orbit-item" data-index="3" data-title="Naadan Taste Pickles"
+                        data-desc="Spicy homemade style mango pickle, bursting with traditional flavors."
+                        data-img="assets/pickles.jpeg">
+                        <img src="assets/pickles.jpeg" alt="Pickles">
+                    </div>
+                    <div class="orbit-item" data-index="4" data-title="Nostalgic Sweets"
+                        data-desc="Sweet memories brought back with our authentic Kadala Mittayi."
+                        data-img="assets/sweets.jpeg">
+                        <img src="assets/sweets.jpeg" alt="Sweets">
+                    </div>
+                    <div class="orbit-item" data-index="5" data-title="HomeChef Masala Mix"
+                        data-desc="Sweet memories brought back with our authentic Kadala Mittayi."
+                        data-img="assets/instant masala mix.jpeg">
+                        <img src="assets/instant masala mix.jpeg" alt="Instant Masala Mix">
+                    </div>
+                </div>
+                <div class="main-plate-container shadow-wrap">
+                    <img src="assets/Pulses.png" class="main-plate-img" id="main-plate-img" alt="Featured Dish">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories Section -->
+    <section class="categories" id="shop">
+        <div class="section-header fade-up">
+            <h2 class="section-title">Explore Our Categories</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="grid-container">
+            <!-- Spices -->
+            <div class="category-card fade-up">
+                <div class="card-image-wrap">
+                    <img src="assets/spices.png" alt="Spices" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Spices</h3>
+                    <p class="card-desc">Handpicked and traditionally processed.</p>
+                    <button class="card-btn">All Spices <span
+                            class="material-icons-outlined">arrow_right_alt</span></button>
+                </div>
+            </div>
+
+            <!-- Pulses -->
+            <div class="category-card fade-up" style="transition-delay: 100ms;">
+                <div class="card-image-wrap">
+                    <img src="assets/Pulses.png" alt="Pulses" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Pulses</h3>
+                    <p class="card-desc">Premium quality everyday essentials.</p>
+                    <button class="card-btn">All Pulses <span
+                            class="material-icons-outlined">arrow_right_alt</span></button>
+                </div>
+            </div>
+
+            <!-- Snacks -->
+            <div class="category-card fade-up" style="transition-delay: 200ms;">
+                <div class="card-image-wrap">
+                    <img src="assets/snacks.png" alt="Snacks" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Snacks</h3>
+                    <p class="card-desc">Banana Chips, Mixture, Achappam & More.</p>
+                    <button class="card-btn">View Snacks <span
+                            class="material-icons-outlined">arrow_right_alt</span></button>
+                </div>
+            </div>
+
+            <!-- Pickles -->
+            <div class="category-card fade-up">
+                <div class="card-image-wrap">
+                    <img src="assets/pickles.jpeg" alt="Pickles" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Pickles</h3>
+                    <p class="card-desc">Fish, Beef, Prawns, Mango & More.</p>
+                    <button class="card-btn">View Pickles <span
+                            class="material-icons-outlined">arrow_right_alt</span></button>
+                </div>
+            </div>
+
+            <!-- Nostalgic Sweets -->
+            <div class="category-card fade-up" style="transition-delay: 100ms;">
+                <div class="card-image-wrap">
+                    <img src="assets/sweets.jpeg" alt="Sweets" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Nostalgic Sweets</h3>
+                    <p class="card-desc">Then Mittayi, Kadala Mittayi & More.</p>
+                    <button class="card-btn">View Sweets <span
+                            class="material-icons-outlined">arrow_right_alt</span></button>
+                </div>
+            </div>
+
+            <!-- Avil Milk -->
+            <div class="category-card fade-up" style="transition-delay: 200ms;">
+                <div class="card-image-wrap">
+                    <img src="assets/avilmilk.png" alt="Avil Milk" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Avil Milk</h3>
+                    <p class="card-desc">Traditional Kerala-style sweet beverage mix.</p>
+                    <button class="card-btn">View Avil Milk <span
+                            class="material-icons-outlined">arrow_right_alt</span></button>
+                </div>
+            </div>
+
+            <!-- Instant Masala Mix -->
+            <div class="category-card fade-up">
+                <div class="card-image-wrap">
+                    <img src="assets/instant masala mix.jpeg" alt="Instant Masala Mix" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Instant Masala Mix</h3>
+                    <p class="card-desc">Chicken, Beef, and Fish Masalas.</p>
+                    <button class="card-btn">View Masalas <span
+                            class="material-icons-outlined">arrow_right_alt</span></button>
+                </div>
+            </div>
+
+            <!-- Masala Powder -->
+            <div class="category-card fade-up" style="transition-delay: 100ms;">
+                <div class="card-image-wrap">
+                    <img src="assets/masala powder.jpeg" alt="Masala Powder" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Masala Powder</h3>
+                    <p class="card-desc">Chilli, Turmeric, Coriander & Garam Masala.</p>
+                    <button class="card-btn">View Powders <span
+                            class="material-icons-outlined">arrow_right_alt</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Products Section (To show the Product Card Design) -->
+    <section class="products fade-up">
+        <div class="section-header">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="grid-container">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="assets/banana chips.png" alt="Banana Chips" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h4 class="product-name">Banana Chips</h4>
+                    <div class="product-name-line"></div>
+                    <p class="product-short-desc">Thinly sliced, crisply fried.</p>
+                    <div class="product-price-row">
+                        <span class="product-price">₹120</span>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="assets/pickles.jpeg" alt="Mango Pickle" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h4 class="product-name">Mango Pickle</h4>
+                    <div class="product-name-line"></div>
+                    <p class="product-short-desc">Spicy homemade style.</p>
+                    <div class="product-price-row">
+                        <span class="product-price">₹150</span>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="assets/masala powder.jpeg" alt="Garam Masala" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h4 class="product-name">Garam Masala</h4>
+                    <div class="product-name-line"></div>
+                    <p class="product-short-desc">Aromatic spice blend.</p>
+                    <div class="product-price-row">
+                        <span class="product-price">₹180</span>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <img src="assets/logo.png" alt="TRUETASTE Logo" class="footer-logo">
+                <p class="footer-desc">Crafting authentic Kerala flavors with passion and tradition. Sourced locally,
+                    loved globally.</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Links</h4>
+                <a href="#about" class="footer-link">About Us</a>
+                <a href="#shop" class="footer-link">Shop</a>
+                <a href="#contact" class="footer-link">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Social</h4>
+                <a href="#" class="footer-link">Instagram</a>
+                <a href="#" class="footer-link">Facebook</a>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Connect</h4>
+                <button class="btn btn-whatsapp"><span class="material-icons-outlined">chat</span> WhatsApp
+                    Order</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-tagline">WHERE TASTE MEETS QUALITY</p>
+            <p class="footer-copy">&copy; 2026 TrueTaste. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
