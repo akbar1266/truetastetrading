@@ -23,13 +23,18 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+    /* Accounts for the fixed navbar height */
+}
+
 body {
     font-family: var(--font-sans);
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 /* Preloader */
@@ -221,6 +226,10 @@ h4,
     padding: 120px 2rem 4rem 2rem;
     overflow: hidden;
     background-color: #F8F4EC;
+    background-image: url("assets/backgroundimage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     /* Soft Cream overlay for hero */
 }
 
@@ -273,12 +282,16 @@ h4,
         opacity: 0;
     }
 
-    50% {
+    10% {
+        opacity: 0.3;
+    }
+
+    80% {
         opacity: 0.3;
     }
 
     100% {
-        transform: translateY(-100vh) rotate(360deg);
+        transform: translateY(-200vh) rotate(360deg);
         opacity: 0;
     }
 }
@@ -352,6 +365,11 @@ h4,
     width: 600px;
     height: 600px;
     z-index: 1;
+}
+
+.dashed-circle {
+    animation: spin 40s linear infinite;
+    transform-origin: center;
 }
 
 .orbit-satellites {
@@ -770,8 +788,8 @@ section {
     max-width: 1300px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    gap: 3rem;
     margin-bottom: 4rem;
 }
 
@@ -797,12 +815,23 @@ section {
 }
 
 .footer-link {
-    display: block;
+    display: flex;
+    align-items: flex-start;
     color: var(--text-light);
     text-decoration: none;
     margin-bottom: 1rem;
     font-size: 0.95rem;
     transition: var(--transition-fast);
+    line-height: 1.5;
+    white-space: nowrap;
+    /* Forces text to stay on one line safely */
+}
+
+.footer-link .material-icons-outlined {
+    font-size: 1.2rem;
+    margin-right: 0.6rem;
+    margin-top: 0.1rem;
+    flex-shrink: 0;
 }
 
 .footer-link:hover {

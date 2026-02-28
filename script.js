@@ -1,4 +1,12 @@
+// Disable native scroll restoration so the page always starts at the top (Hero Section) on refresh
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
 window.addEventListener('load', () => {
+    // Ensure we are at the top
+    window.scrollTo(0, 0);
+
     const preloader = document.getElementById('preloader');
     if (preloader) {
         setTimeout(() => {
@@ -17,6 +25,26 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             navbar.classList.remove('scrolled');
         }
+    });
+
+    // Custom Smooth Scrolling for Anchor Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const navbarHeight = document.getElementById('navbar').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - (navbarHeight + 20); // 20px extra padding
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
     });
 
     // Intersection Observer for Fade-Up Animations
@@ -64,8 +92,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Subtle Parallax for hero particles
     const particles = document.getElementById('particles');
+    const heroSection = document.getElementById('hero');
     window.addEventListener('scroll', () => {
-        if (window.scrollY < window.innerHeight) {
+        const limit = heroSection ? heroSection.offsetHeight : window.innerHeight;
+        if (window.scrollY <= limit) {
             const val = window.scrollY * 0.4;
             particles.style.transform = `translateY(${val}px)`;
         }
@@ -82,17 +112,16 @@ document.addEventListener('DOMContentLoaded', () => {
         p.style.height = size + 'px';
 
         let x = Math.random() * 100; // 0 to 100vw
-        let y = Math.random() * 100; // 0 to 100vh
 
         p.style.left = x + '%';
-        p.style.top = y + '%';
+        p.style.top = '100%'; // Start exactly at the bottom
 
         // Random drift duration between 15s and 30s
         let duration = Math.random() * 15 + 15;
         p.style.animationDuration = duration + 's';
 
-        // Random delay
-        let delay = Math.random() * 5;
+        // Negative delay ensures particles are already mid-flight on page load
+        let delay = -(Math.random() * duration);
         p.style.animationDelay = delay + 's';
 
         particles.appendChild(p);
