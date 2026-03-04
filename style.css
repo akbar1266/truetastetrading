@@ -225,12 +225,6 @@ h4,
     justify-content: center;
     padding: 120px 2rem 4rem 2rem;
     overflow: hidden;
-    background-color: #F8F4EC;
-    background-image: url("assets/backgroundimage.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* Soft Cream overlay for hero */
 }
 
 .bg-circle-shape {
@@ -778,8 +772,6 @@ section {
 
 /* Footer */
 .footer {
-    background: #EFECE6;
-    /* slightly darker off-white tone */
     padding: 6rem 2rem 2rem 2rem;
     border-top: 1px solid var(--divider-color);
 }

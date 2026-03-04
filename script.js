@@ -277,3 +277,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+// Global function for WhatsApp ordering with dynamic product details
+window.orderViaWhatsApp = function (buttonElement) {
+    // Find the closest product info container
+    const card = buttonElement.closest('.product-info');
+    if (!card) return;
+
+    // Extract name and price
+    const productName = card.querySelector('.product-name').innerText;
+    const price = card.querySelector('.product-price').innerText;
+
+    // Construct the WhatsApp message
+    const message = encodeURIComponent(`Hello TrueTaste, I would like to place an order for:\n\n*Product:* ${productName}\n*Price:* ${price}\n\nPlease let me know the total with shipping and payment details. Thank you!`);
+
+    // Open WhatsApp link
+    window.open(`https://wa.me/447876284545?text=${message}`, '_blank');
+};
