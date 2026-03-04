@@ -1,233 +1,203 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweets | Kerala Traditional Food</title>
-    <meta name="description"
-        content="Authentic Flavours, Crafted with Tradition. Premium spices, nostalgic sweets, and homemade delicacies — delivered fresh.">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sweets | Kerala Traditional Food</title>
+<!-- Security Headers -->
+<meta content="1; mode=block" http-equiv="X-XSS-Protection"/>
+<meta content="nosniff" http-equiv="X-Content-Type-Options"/>
+<meta content="strict-origin-when-cross-origin" name="referrer"/>
+<!-- Performance Optimization -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<meta content="Authentic Flavours, Crafted with Tradition. Premium spices, nostalgic sweets, and homemade delicacies — delivered fresh." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
 </head>
-
 <body>
-    <!-- Preloader -->
-    <div id="preloader" class="preloader">
-        <div class="spinner">
-            <div class="circle"></div>
-            <div class="circle"></div>
-        </div>
-        <div class="loading-text">TRUETASTE</div>
-    </div>
-
-    <!-- Grain Texture Overlay -->
-    <div class="grain-overlay"></div>
-
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="index.html#hero" class="logo">
-                <img src="assets/logo.png" alt="TRUETASTE Logo">
-            </a>
-            <div class="nav-links">
-                <a href="index.html#about">About Us</a>
-                <a href="index.html#vision">Vision</a>
-                <a href="index.html#product">Products</a>
-                <a href="index.html#contact">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <section class="products fade-up" style="padding-top: 150px; min-height: 100vh;">
-        <div class="section-header" style="position: relative;">
-            <button class="card-btn" onclick="window.location.href='index.html#product'"
-                style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); padding: 0.8rem 1.6rem; font-size: 1.25rem; font-weight: 500;">
-                <span class="material-icons-outlined"
-                    style="transform: rotate(180deg); margin-right: 8px; font-size: 1.5rem;">arrow_right_alt</span> Back
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+<div class="spinner">
+<div class="circle"></div>
+<div class="circle"></div>
+</div>
+<div class="loading-text">TRUETASTE</div>
+</div>
+<!-- Grain Texture Overlay -->
+<div class="grain-overlay"></div>
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+<div class="nav-container">
+<a class="logo" href="index.html#hero">
+<picture><source srcset="assets/logo.avif" type="image/avif"/><source srcset="assets/logo.webp" type="image/webp"/><img alt="TRUETASTE Logo" decoding="async" height="500" loading="lazy" src="assets/logo.webppng width="500"/></picture>
+</a>
+<div class="nav-links">
+<a href="index.html#about">About Us</a>
+<a href="index.html#vision">Vision</a>
+<a href="index.html#product">Products</a>
+<a href="index.html#contact">Contact</a>
+</div>
+</div>
+</nav>
+<section class="products fade-up" style="padding-top: 150px; min-height: 100vh;">
+<div class="section-header" style="position: relative;">
+<button class="card-btn" onclick="window.location.href='index.html#product'" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); padding: 0.8rem 1.6rem; font-size: 1.25rem; font-weight: 500;">
+<span class="material-icons-outlined" style="transform: rotate(180deg); margin-right: 8px; font-size: 1.5rem;">arrow_right_alt</span> Back
             </button>
-            <h2 class="section-title">All Sweets</h2>
-            <div class="section-divider"></div>
-        </div>
-        <div class="grid-container">
-
-            <!-- Product 1 -->
-            <div class="product-card">
-                <div class="product-img-wrap">
-                    <img src="assets/sweets/cocunut ladu.png" alt="Coconut Ladu" class="product-img">
-                </div>
-                <div class="product-info">
-                    <h4 class="product-name">Coconut Ladu</h4>
-                    <div class="product-name-line"></div>
-                    <p class="product-short-desc">Authentic traditional sweet.</p>
-                    <div class="product-price-row">
-                        <span class="product-price">₹150</span>
-                        <button class="btn-add-cart" onclick="orderViaWhatsApp(this)"
-                            style="background-color: #25D366; color: white; border: none; display: flex; align-items: center; gap: 4px;"><span
-                                class="material-icons-outlined" style="font-size: 18px;">chat</span> WhatsApp
+<h2 class="section-title">All Sweets</h2>
+<div class="section-divider"></div>
+</div>
+<div class="grid-container">
+<!-- Product 1 -->
+<div class="product-card">
+<div class="product-img-wrap">
+<picture><source srcset="assets/sweets/cocunut ladu.avif" type="image/avif"/><source srcset="assets/sweets/cocunut ladu.webp" type="image/webp"/><img alt="Coconut Ladu" class="product-img" decoding="async" height="380" loading="lazy" src="assets/sweets/cocunut ladu.webppng width="380"/></picture>
+</div>
+<div class="product-info">
+<h4 class="product-name">Coconut Ladu</h4>
+<div class="product-name-line"></div>
+<p class="product-short-desc">Authentic traditional sweet.</p>
+<div class="product-price-row">
+<span class="product-price">₹150</span>
+<button class="btn-add-cart" onclick="orderViaWhatsApp(this)" style="background-color: #25D366; color: white; border: none; display: flex; align-items: center; gap: 4px;"><span class="material-icons-outlined" style="font-size: 18px;">chat</span> WhatsApp
                             Order</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 2 -->
-            <div class="product-card">
-                <div class="product-img-wrap">
-                    <img src="assets/sweets/ellunda.png" alt="Ellunda" class="product-img">
-                </div>
-                <div class="product-info">
-                    <h4 class="product-name">Ellunda</h4>
-                    <div class="product-name-line"></div>
-                    <p class="product-short-desc">Authentic traditional sweet.</p>
-                    <div class="product-price-row">
-                        <span class="product-price">₹150</span>
-                        <button class="btn-add-cart" onclick="orderViaWhatsApp(this)"
-                            style="background-color: #25D366; color: white; border: none; display: flex; align-items: center; gap: 4px;"><span
-                                class="material-icons-outlined" style="font-size: 18px;">chat</span> WhatsApp
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="product-card">
+<div class="product-img-wrap">
+<picture><source srcset="assets/sweets/ellunda.avif" type="image/avif"/><source srcset="assets/sweets/ellunda.webp" type="image/webp"/><img alt="Ellunda" class="product-img" decoding="async" height="379" loading="lazy" src="assets/sweets/ellunda.webppng width="379"/></picture>
+</div>
+<div class="product-info">
+<h4 class="product-name">Ellunda</h4>
+<div class="product-name-line"></div>
+<p class="product-short-desc">Authentic traditional sweet.</p>
+<div class="product-price-row">
+<span class="product-price">₹150</span>
+<button class="btn-add-cart" onclick="orderViaWhatsApp(this)" style="background-color: #25D366; color: white; border: none; display: flex; align-items: center; gap: 4px;"><span class="material-icons-outlined" style="font-size: 18px;">chat</span> WhatsApp
                             Order</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="product-card">
-                <div class="product-img-wrap">
-                    <img src="assets/sweets/kadala.png" alt="Kadala Mittayi" class="product-img">
-                </div>
-                <div class="product-info">
-                    <h4 class="product-name">Kadala Mittayi</h4>
-                    <div class="product-name-line"></div>
-                    <p class="product-short-desc">Authentic traditional sweet.</p>
-                    <div class="product-price-row">
-                        <span class="product-price">₹150</span>
-                        <button class="btn-add-cart" onclick="orderViaWhatsApp(this)"
-                            style="background-color: #25D366; color: white; border: none; display: flex; align-items: center; gap: 4px;"><span
-                                class="material-icons-outlined" style="font-size: 18px;">chat</span> WhatsApp
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="product-card">
+<div class="product-img-wrap">
+<picture><source srcset="assets/sweets/kadala.avif" type="image/avif"/><source srcset="assets/sweets/kadala.webp" type="image/webp"/><img alt="Kadala Mittayi" class="product-img" decoding="async" height="369" loading="lazy" src="assets/sweets/kadala.webppng width="369"/></picture>
+</div>
+<div class="product-info">
+<h4 class="product-name">Kadala Mittayi</h4>
+<div class="product-name-line"></div>
+<p class="product-short-desc">Authentic traditional sweet.</p>
+<div class="product-price-row">
+<span class="product-price">₹150</span>
+<button class="btn-add-cart" onclick="orderViaWhatsApp(this)" style="background-color: #25D366; color: white; border: none; display: flex; align-items: center; gap: 4px;"><span class="material-icons-outlined" style="font-size: 18px;">chat</span> WhatsApp
                             Order</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 4 -->
-            <div class="product-card">
-                <div class="product-img-wrap">
-                    <img src="assets/sweets/mixture2.png" alt="Sweet Mixture" class="product-img">
-                </div>
-                <div class="product-info">
-                    <h4 class="product-name">Sweet Mixture</h4>
-                    <div class="product-name-line"></div>
-                    <p class="product-short-desc">Authentic traditional sweet.</p>
-                    <div class="product-price-row">
-                        <span class="product-price">₹150</span>
-                        <button class="btn-add-cart" onclick="orderViaWhatsApp(this)"
-                            style="background-color: #25D366; color: white; border: none; display: flex; align-items: center; gap: 4px;"><span
-                                class="material-icons-outlined" style="font-size: 18px;">chat</span> WhatsApp
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="product-card">
+<div class="product-img-wrap">
+<picture><source srcset="assets/sweets/mixture2.avif" type="image/avif"/><source srcset="assets/sweets/mixture2.webp" type="image/webp"/><img alt="Sweet Mixture" class="product-img" decoding="async" height="379" loading="lazy" src="assets/sweets/mixture2.webppng width="379"/></picture>
+</div>
+<div class="product-info">
+<h4 class="product-name">Sweet Mixture</h4>
+<div class="product-name-line"></div>
+<p class="product-short-desc">Authentic traditional sweet.</p>
+<div class="product-price-row">
+<span class="product-price">₹150</span>
+<button class="btn-add-cart" onclick="orderViaWhatsApp(this)" style="background-color: #25D366; color: white; border: none; display: flex; align-items: center; gap: 4px;"><span class="material-icons-outlined" style="font-size: 18px;">chat</span> WhatsApp
                             Order</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 5 -->
-            <div class="product-card">
-                <div class="product-img-wrap">
-                    <img src="assets/sweets/puli.png" alt="Puli Mittayi" class="product-img">
-                </div>
-                <div class="product-info">
-                    <h4 class="product-name">Puli Mittayi</h4>
-                    <div class="product-name-line"></div>
-                    <p class="product-short-desc">Authentic traditional sweet.</p>
-                    <div class="product-price-row">
-                        <span class="product-price">₹150</span>
-                        <button class="btn-add-cart" onclick="orderViaWhatsApp(this)"
-                            style="background-color: #25D366; color: white; border: none; display: flex; align-items: center; gap: 4px;"><span
-                                class="material-icons-outlined" style="font-size: 18px;">chat</span> WhatsApp
+</div>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="product-card">
+<div class="product-img-wrap">
+<picture><source srcset="assets/sweets/puli.avif" type="image/avif"/><source srcset="assets/sweets/puli.webp" type="image/webp"/><img alt="Puli Mittayi" class="product-img" decoding="async" height="379" loading="lazy" src="assets/sweets/puli.webppng width="379"/></picture>
+</div>
+<div class="product-info">
+<h4 class="product-name">Puli Mittayi</h4>
+<div class="product-name-line"></div>
+<p class="product-short-desc">Authentic traditional sweet.</p>
+<div class="product-price-row">
+<span class="product-price">₹150</span>
+<button class="btn-add-cart" onclick="orderViaWhatsApp(this)" style="background-color: #25D366; color: white; border: none; display: flex; align-items: center; gap: 4px;"><span class="material-icons-outlined" style="font-size: 18px;">chat</span> WhatsApp
                             Order</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 6 -->
-            <div class="product-card">
-                <div class="product-img-wrap">
-                    <img src="assets/sweets/thenmittayi.png" alt="Then Mittayi" class="product-img">
-                </div>
-                <div class="product-info">
-                    <h4 class="product-name">Then Mittayi</h4>
-                    <div class="product-name-line"></div>
-                    <p class="product-short-desc">Authentic traditional sweet.</p>
-                    <div class="product-price-row">
-                        <span class="product-price">₹150</span>
-                        <button class="btn-add-cart" onclick="orderViaWhatsApp(this)"
-                            style="background-color: #25D366; color: white; border: none; display: flex; align-items: center; gap: 4px;"><span
-                                class="material-icons-outlined" style="font-size: 18px;">chat</span> WhatsApp
+</div>
+</div>
+</div>
+<!-- Product 6 -->
+<div class="product-card">
+<div class="product-img-wrap">
+<picture><source srcset="assets/sweets/thenmittayi.avif" type="image/avif"/><source srcset="assets/sweets/thenmittayi.webp" type="image/webp"/><img alt="Then Mittayi" class="product-img" decoding="async" height="354" loading="lazy" src="assets/sweets/thenmittayi.webppng width="354"/></picture>
+</div>
+<div class="product-info">
+<h4 class="product-name">Then Mittayi</h4>
+<div class="product-name-line"></div>
+<p class="product-short-desc">Authentic traditional sweet.</p>
+<div class="product-price-row">
+<span class="product-price">₹150</span>
+<button class="btn-add-cart" onclick="orderViaWhatsApp(this)" style="background-color: #25D366; color: white; border: none; display: flex; align-items: center; gap: 4px;"><span class="material-icons-outlined" style="font-size: 18px;">chat</span> WhatsApp
                             Order</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 7 -->
-            <div class="product-card">
-                <div class="product-img-wrap">
-                    <img src="assets/sweets/ChatGPT Image Mar 2, 2026, 11_30_33 PM.png" alt="Assorted Sweets"
-                        class="product-img">
-                </div>
-                <div class="product-info">
-                    <h4 class="product-name">Coconut Burfi</h4>
-                    <div class="product-name-line"></div>
-                    <p class="product-short-desc">Authentic traditional sweet.</p>
-                    <div class="product-price-row">
-                        <span class="product-price">₹150</span>
-                        <button class="btn-add-cart" onclick="orderViaWhatsApp(this)"
-                            style="background-color: #25D366; color: white; border: none; display: flex; align-items: center; gap: 4px;"><span
-                                class="material-icons-outlined" style="font-size: 18px;">chat</span> WhatsApp
+</div>
+</div>
+</div>
+<!-- Product 7 -->
+<div class="product-card">
+<div class="product-img-wrap">
+<picture><source srcset="assets/sweets/ChatGPT Image Mar 2, 2026, 11_30_33 PM.avif" type="image/avif"/><source srcset="assets/sweets/ChatGPT Image Mar 2, 2026, 11_30_33 PM.webp" type="image/webp"/><img alt="Assorted Sweets" class="product-img" decoding="async" height="1024" loading="lazy" src="assets/sweets/ChatGPT Image Mar 2, 2026, 11_30_33 PM.webppng width="1024"/></picture>
+</div>
+<div class="product-info">
+<h4 class="product-name">Coconut Burfi</h4>
+<div class="product-name-line"></div>
+<p class="product-short-desc">Authentic traditional sweet.</p>
+<div class="product-price-row">
+<span class="product-price">₹150</span>
+<button class="btn-add-cart" onclick="orderViaWhatsApp(this)" style="background-color: #25D366; color: white; border: none; display: flex; align-items: center; gap: 4px;"><span class="material-icons-outlined" style="font-size: 18px;">chat</span> WhatsApp
                             Order</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer" id="contact">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <img src="assets/logo.png" alt="TRUETASTE Logo" class="footer-logo">
-                <p class="footer-desc">Crafting authentic Kerala flavors with passion and tradition. Sourced locally,
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer" id="contact">
+<div class="footer-grid">
+<div class="footer-col">
+<picture><source srcset="assets/logo.avif" type="image/avif"/><source srcset="assets/logo.webp" type="image/webp"/><img alt="TRUETASTE Logo" class="footer-logo" decoding="async" height="500" loading="lazy" src="assets/logo.webppng width="500"/></picture>
+<p class="footer-desc">Crafting authentic Kerala flavors with passion and tradition. Sourced locally,
                     loved globally.</p>
-            </div>
-            <div class="footer-col">
-                <h4 class="footer-title">Links</h4>
-                <a href="index.html#about" class="footer-link">About Us</a>
-                <a href="index.html#product" class="footer-link">Products</a>
-            </div>
-            <div class="footer-col">
-                <h4 class="footer-title">Social</h4>
-                <a href="#" class="footer-link">Instagram</a>
-                <a href="#" class="footer-link">Facebook</a>
-                <a href="https://wa.me/447876284545" class="footer-link">WhatsApp</a>
-            </div>
-            <div class="footer-col">
-                <h4 class="footer-title">Contact Details</h4>
-                <a href="tel:+447876284545" class="footer-link"><span class="material-icons-outlined">call</span>+44
+</div>
+<div class="footer-col">
+<h4 class="footer-title">Links</h4>
+<a class="footer-link" href="index.html#about">About Us</a>
+<a class="footer-link" href="index.html#product">Products</a>
+</div>
+<div class="footer-col">
+<h4 class="footer-title">Social</h4>
+<a class="footer-link" href="#">Instagram</a>
+<a class="footer-link" href="#">Facebook</a>
+<a class="footer-link" href="https://wa.me/447876284545">WhatsApp</a>
+</div>
+<div class="footer-col">
+<h4 class="footer-title">Contact Details</h4>
+<a class="footer-link" href="tel:+447876284545"><span class="material-icons-outlined">call</span>+44
                     7876 284545</a>
-                <a href="mailto:truetastetrading@gmail.com" class="footer-link"><span
-                        class="material-icons-outlined">email</span>truetastetrading@gmail.com</a>
-                <p class="footer-link" style="cursor: default;"><span
-                        class="material-icons-outlined">location_on</span>UK</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p class="footer-tagline">WHERE TASTE MEETS QUALITY</p>
-            <p class="footer-copy">&copy; 2026 TrueTaste. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="script.js"></script>
+<a class="footer-link" href="mailto:truetastetrading@gmail.com"><span class="material-icons-outlined">email</span>truetastetrading@gmail.com</a>
+<p class="footer-link" style="cursor: default;"><span class="material-icons-outlined">location_on</span>UK</p>
+</div>
+</div>
+<div class="footer-bottom">
+<p class="footer-tagline">WHERE TASTE MEETS QUALITY</p>
+<p class="footer-copy">© 2026 TrueTaste. All rights reserved.</p>
+</div>
+</footer>
+<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script defer="" src="script.js"></script>
 </body>
-
 </html>
