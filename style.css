@@ -917,35 +917,98 @@ section {
 
 @media (max-width: 768px) {
     .hero {
-        padding-top: 100px;
+        padding-top: 140px;
         padding-bottom: 2rem;
-        min-height: auto;
+        min-height: 100vh;
+        overflow-x: hidden;
+        align-items: flex-start;
     }
 
     .hero-container {
         padding-top: 0;
         gap: 1.5rem;
+        position: relative;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .hero-text-block {
+        text-align: right;
+        margin-left: auto;
+        width: 100%;
+        max-width: 100%;
+        z-index: 10;
+        padding-right: 25px;
     }
 
     .hero-arc-visual {
-        transform: scale(0.48);
-        transform-origin: top center;
-        height: 300px;
-        margin-top: 1.5rem;
+        position: absolute;
+        left: calc(-2rem - 300px);
+        top: 35%;
+        transform: translateY(-50%) scale(0.6);
+        transform-origin: center center;
+        height: 600px;
+        width: 600px;
+        margin-top: 0;
+        z-index: 1;
     }
 
     .hero-headline {
-        font-size: clamp(2.5rem, 8vw, 3.5rem) !important;
+        font-size: clamp(1.8rem, 7vw, 2.2rem) !important;
         margin-bottom: 15px !important;
+        white-space: nowrap;
     }
 
     .hero-subtext {
-        font-size: 1.15rem !important;
+        font-size: 1.1rem !important;
         line-height: 1.4 !important;
     }
 
     .grid-container {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 2rem;
+        gap: 1.5rem;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        scroll-padding-inline-start: 1rem;
+    }
+
+    .grid-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .category-card,
+    .product-card {
+        flex: 0 0 80%;
+        max-width: 320px;
+        scroll-snap-align: center;
+    }
+
+    .about {
+        padding-bottom: 2rem;
+    }
+
+    .vision {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    section {
+        padding: 4rem 1.5rem;
+    }
+
+    .products {
+        min-height: auto !important;
+    }
+
+    .mobile-hidden {
+        display: none;
     }
 
     .section-header {
@@ -973,5 +1036,20 @@ section {
 
     .hero-buttons {
         flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .nav-container {
+        padding: 0 1rem;
+    }
+
+    .nav-links {
+        display: flex;
+        white-space: nowrap;
+    }
+
+    .nav-links a {
+        margin: 0 0.4rem;
+        font-size: 0.75rem;
     }
 }
