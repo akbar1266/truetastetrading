@@ -204,7 +204,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     duration: 0.4,
                     ease: "power2.inOut",
                     onComplete: () => {
-                        mainPlate.src = sat.getAttribute('data-img');
+                        const newImgSrc = sat.getAttribute('data-img');
+                        mainPlate.src = newImgSrc;
+                        
+                        const picture = mainPlate.closest('picture');
+                        if (picture) {
+                            const sources = picture.querySelectorAll('source');
+                            sources.forEach(source => {
+                                if (source.type === 'image/avif') {
+                                    source.srcset = newImgSrc.replace(/\.webp$/, '.avif');
+                                } else if (source.type === 'image/webp') {
+                                    source.srcset = newImgSrc;
+                                }
+                            });
+                        }
+
                         gsap.to(mainPlate, {
                             scale: 1,
                             opacity: 1,
@@ -257,6 +271,9 @@ document.addEventListener('DOMContentLoaded', () => {
             satellites.forEach((sat, index) => {
                 sat.addEventListener('click', () => {
                     if (index === currentIndex || gsap.isTweening(circleProxy)) return;
+
+                    clearInterval(autoRotate);
+                    autoRotate = setInterval(() => rotateWheel('next'), 2500);
 
                     let diff = currentIndex - index;
                     // optimize so it takes the shortest rotation path
