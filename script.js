@@ -204,19 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     duration: 0.4,
                     ease: "power2.inOut",
                     onComplete: () => {
-                        const newSrc = sat.getAttribute('data-img');
-                        mainPlate.src = newSrc;
-                        const pictureEl = mainPlate.closest('picture');
-                        if (pictureEl) {
-                            const sources = pictureEl.querySelectorAll('source');
-                            sources.forEach(source => {
-                                if (source.type === 'image/avif') {
-                                    source.srcset = newSrc.replace('.webp', '.avif');
-                                } else if (source.type === 'image/webp') {
-                                    source.srcset = newSrc;
-                                }
-                            });
-                        }
+                        mainPlate.src = sat.getAttribute('data-img');
                         gsap.to(mainPlate, {
                             scale: 1,
                             opacity: 1,

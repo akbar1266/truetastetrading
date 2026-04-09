@@ -1,5 +1,0 @@
-
-# Raw unoptimized images ignored for deployment bundle size
-*.png
-*.jpg
-*.jpeg
