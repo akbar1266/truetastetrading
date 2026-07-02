@@ -93,38 +93,40 @@ document.addEventListener('DOMContentLoaded', () => {
     // Subtle Parallax for hero particles
     const particles = document.getElementById('particles');
     const heroSection = document.getElementById('hero');
-    window.addEventListener('scroll', () => {
-        const limit = heroSection ? heroSection.offsetHeight : window.innerHeight;
-        if (window.scrollY <= limit) {
-            const val = window.scrollY * 0.4;
-            particles.style.transform = `translateY(${val}px)`;
+    if (particles) {
+        window.addEventListener('scroll', () => {
+            const limit = heroSection ? heroSection.offsetHeight : window.innerHeight;
+            if (window.scrollY <= limit) {
+                const val = window.scrollY * 0.4;
+                particles.style.transform = `translateY(${val}px)`;
+            }
+        });
+
+        // Generate floating spice particles (very minimal)
+        const particleCount = 15;
+        for (let i = 0; i < particleCount; i++) {
+            let p = document.createElement('div');
+            p.className = 'particle';
+
+            let size = Math.random() * 6 + 2; // 2px to 8px
+            p.style.width = size + 'px';
+            p.style.height = size + 'px';
+
+            let x = Math.random() * 100; // 0 to 100vw
+
+            p.style.left = x + '%';
+            p.style.top = '100%'; // Start exactly at the bottom
+
+            // Random drift duration between 15s and 30s
+            let duration = Math.random() * 15 + 15;
+            p.style.animationDuration = duration + 's';
+
+            // Negative delay ensures particles are already mid-flight on page load
+            let delay = -(Math.random() * duration);
+            p.style.animationDelay = delay + 's';
+
+            particles.appendChild(p);
         }
-    });
-
-    // Generate floating spice particles (very minimal)
-    const particleCount = 15;
-    for (let i = 0; i < particleCount; i++) {
-        let p = document.createElement('div');
-        p.className = 'particle';
-
-        let size = Math.random() * 6 + 2; // 2px to 8px
-        p.style.width = size + 'px';
-        p.style.height = size + 'px';
-
-        let x = Math.random() * 100; // 0 to 100vw
-
-        p.style.left = x + '%';
-        p.style.top = '100%'; // Start exactly at the bottom
-
-        // Random drift duration between 15s and 30s
-        let duration = Math.random() * 15 + 15;
-        p.style.animationDuration = duration + 's';
-
-        // Negative delay ensures particles are already mid-flight on page load
-        let delay = -(Math.random() * duration);
-        p.style.animationDelay = delay + 's';
-
-        particles.appendChild(p);
     }
 
     // Interactive Arc Carousel with GSAP
