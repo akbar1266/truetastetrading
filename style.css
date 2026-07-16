@@ -886,6 +886,10 @@ section {
     letter-spacing: 1px;
 }
 
+.developer-link:hover {
+    color: #e53935;
+}
+
 .developer-link .material-icons-outlined {
     font-size: 1.1rem;
 }
